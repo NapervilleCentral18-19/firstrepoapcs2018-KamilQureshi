@@ -6,35 +6,35 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+import java.util.Scanner;
+import java.text.NumberFormat;
 public class HOWMANYOFEACHCOIN
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
-    /**
-     * Default constructor for objects of class HOWMANYOFEACHCOIN
-     */
-    public HOWMANYOFEACHCOIN()
+       public static void main  (String[] args)
     {
-        // initialise instance variables
-        x = 0;
+        Scanner Keyboard = new Scanner(System.in);
+        double total;
+        int qrtrval;
+        int dimeval;
+        int nickval;
+        int pennval;
+        int qrtrtot,dimetot,nicktot,penntot
+        System.out.println("Enter the number of quarters");
+        qrtrval = Keyboard.nextInt();//number of quarters
+        System.out.println("Enter the number of dimes");
+        dimeval = Keyboard.nextInt();//number of dimes
+        System.out.println("Enter the number of nickels");
+        nickval = Keyboard.nextInt();//number of nickels
+        System.out.println("Enter the number of pennies");
+        pennval = Keyboard.nextInt();//number of pennies
+        total = ((qrtrval * .25) + (.10 * dimeval) + (.05 * nickval) + (.01 * pennval));
+        NumberFormat money = NumberFormat.getCurrencyInstance();
+        System.out.print("The total is " + money.format(total));
+        qrtrtot = (qrtrval * 
+        System.out.print(
+        
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x+y;
-    }
+  
 
 }
