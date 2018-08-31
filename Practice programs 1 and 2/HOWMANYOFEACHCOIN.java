@@ -18,7 +18,11 @@ public class HOWMANYOFEACHCOIN
         int dimeval;
         int nickval;
         int pennval;
-        int qrtrtot,dimetot,nicktot,penntot
+        double qrtrtot;
+        double dimetot; 
+        double nicktot; 
+        double penntot;
+        
         System.out.println("Enter the number of quarters");
         qrtrval = Keyboard.nextInt();//number of quarters
         System.out.println("Enter the number of dimes");
@@ -27,13 +31,21 @@ public class HOWMANYOFEACHCOIN
         nickval = Keyboard.nextInt();//number of nickels
         System.out.println("Enter the number of pennies");
         pennval = Keyboard.nextInt();//number of pennies
+        
+        //totaling coin values
         total = ((qrtrval * .25) + (.10 * dimeval) + (.05 * nickval) + (.01 * pennval));
+        //formatting output to money
         NumberFormat money = NumberFormat.getCurrencyInstance();
-        System.out.print("The total is " + money.format(total));
-        qrtrtot = (qrtrval * 
-        System.out.print(
         
-        
+        System.out.println("The total is " + money.format(total));
+        qrtrtot = (qrtrval);
+        System.out.println("There are " + qrtrtot + " quarters");
+        dimetot = (dimeval);
+        System.out.println("There are " + dimetot + " dimes");
+        nicktot = (nickval);
+        System.out.println("There are " + nicktot + " nickels");
+        penntot = (pennval);
+        System.out.println("There are " + penntot + " pennies");
     }
   
 
