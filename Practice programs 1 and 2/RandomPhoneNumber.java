@@ -1,43 +1,36 @@
 
-
 /**
- * Write a description of class RandomPhoneNumber here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Generates and prints a random phone number
+ *
+ * Kamil Qureshi
+ * APCS
+ * Mr. Hayes
+ * Period 7
  */
 import java.util.Random;
-public class RandomPhoneNumber
+public class Randomphonenumber
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    
-
-    /**
-     * Default constructor for objects of class RandomPhoneNumber
-     */
-    
-    public static void main  (String[] args)
+    public static void main (String[] args)
     {
-        Random generator = new Random();
-        int num1;
-        int num2;
-        int num3;
-        int num4;
-        int num5;
-        int num6;
-        int num7;
+        Random gen = new Random();
+        int num1, num2, num3, num4, num5, num6, num7;
+        // sets values for all numbers
+        num1 = gen.nextInt(8);
+        num2 = gen.nextInt(8);
+        num3 = gen.nextInt(8);
+        num4 = gen.nextInt(8);
+        num5 = gen.nextInt(5);
+        num6 = gen.nextInt(3);
+        num7 = gen.nextInt(10000);
+        // prints out the generated digits as a phone number
+        System.out.print("Your phone number is ");
+        System.out.print(num1);
+        System.out.print(num2);
+        System.out.print(num3 + "-");
+        System.out.print(num4);
+        System.out.print(num5);
+        System.out.print(num6 + "-");
+        System.out.println(num7);
         
-        num1 = generator.nextInt (8);
-        num2 = generator.nextInt (8);
-        num3 = generator.nextInt (8);
-        num7 = generator.nextInt (1000);
-        num4 = generator.nextInt (8);
-        num5 = generator.nextInt (5);
-        num6 = generator.nextInt (3);
-        System.out.println(num1 + num2 + num3 + "-" + num4 + num5 + num6 + "-" + num7);
     }
-
-    
-    
-
-}
+    }
